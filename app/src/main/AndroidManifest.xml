@@ -12,7 +12,7 @@
 
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".fragment.FragmentActivity" />
-        <activity android:name=".SplashScreenActivity"
+        <activity android:name=".activity.SplashScreenActivity"
             android:label="SplashScreen"
             android:theme="@style/Theme.Transparent">
             <intent-filter>

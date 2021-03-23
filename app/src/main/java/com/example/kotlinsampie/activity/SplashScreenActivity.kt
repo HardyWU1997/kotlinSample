@@ -1,4 +1,4 @@
-package com.example.kotlinsampie
+package com.example.kotlinsampie.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
 import android.widget.TextView
-import com.example.kotlinsampie.activity.MainActivity
+import com.example.kotlinsampie.R
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -22,9 +22,9 @@ class SplashScreenActivity : AppCompatActivity() {
         middleTextView = findViewById(R.id.middleTextView)
         bottomTextView = findViewById(R.id.bottomTextView)
 
-        val topAnimation = AnimationUtils.loadAnimation(this,R.anim.top_animation)
-        val middleAnimation = AnimationUtils.loadAnimation(this,R.anim.middle_animation)
-        val bottomAnimation = AnimationUtils.loadAnimation(this,R.anim.bottom_animation)
+        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.top_animation)
+        val middleAnimation = AnimationUtils.loadAnimation(this, R.anim.middle_animation)
+        val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
 
         topTextView.startAnimation(topAnimation)
         middleTextView.startAnimation(middleAnimation)
