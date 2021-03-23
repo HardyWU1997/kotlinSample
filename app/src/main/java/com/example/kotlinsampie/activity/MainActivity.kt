@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var fragmentBtn:Button
     private lateinit var recyclerBtn:Button
+    private lateinit var dialogBtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +21,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         fragmentBtn = findViewById(R.id.fragmentBtn)
         recyclerBtn = findViewById(R.id.recyclerViewBtn)
+        dialogBtn = findViewById(R.id.dialogBtn)
 
         fragmentBtn.setOnClickListener(this)
         recyclerBtn.setOnClickListener(this)
+        dialogBtn.setOnClickListener(this)
 
     }
 
@@ -37,6 +40,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.recyclerViewBtn ->{
                 val intent = Intent()
                 intent.setClass(this@MainActivity, RecyclerViewActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.dialogBtn ->{
+                val intent = Intent()
+                intent.setClass(this@MainActivity, DialogActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DialogActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/AlertBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Alert Dialog"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/ProgressBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Progress Dialog"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/DataPickerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DataPicker Dialog"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/TimePickerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TimePicker Dialog"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Select Data and Time"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"/>
+
+
+</LinearLayout>
