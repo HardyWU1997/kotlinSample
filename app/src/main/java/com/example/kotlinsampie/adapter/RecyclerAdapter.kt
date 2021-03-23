@@ -43,7 +43,7 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
             itemView.setOnClickListener { val position:Int = adapterPosition
 
-                Toast.makeText(itemView.context,"你點擊了 ${title[0]}",Toast.LENGTH_LONG).show()
+                Toast.makeText(itemView.context,"你點擊了 ${title[position]}",Toast.LENGTH_LONG).show()
             }
         }
     }
