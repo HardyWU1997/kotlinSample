@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="fab_margin">48.0000dp</dimen>
+	<dimen name="text_margin">48.0000dp</dimen>
+	<dimen name="biggest_text_size">72.0000sp</dimen>
+	<dimen name="bigger_text_size">66.0000sp</dimen>
+	<dimen name="non_title_text_size">42.0000sp</dimen>
+	<dimen name="middle_text_size">36.0000sp</dimen>
+	<dimen name="small_text_size">30.0000sp</dimen>
+	<dimen name="smaller_text_size">24.0000sp</dimen>
+</resources>
