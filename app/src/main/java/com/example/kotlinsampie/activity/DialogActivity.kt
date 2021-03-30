@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import com.example.kotlinsampie.R
+import kotlinx.android.synthetic.main.activity_dialog.*
 import java.util.*
 
 class DialogActivity : AppCompatActivity(),View.OnClickListener {
@@ -54,15 +55,23 @@ class DialogActivity : AppCompatActivity(),View.OnClickListener {
                 DatePickerMethod()
             }
             R.id.TimePickerBtn ->{
-                var c: Calendar = Calendar.getInstance()
-                var tp = TimePickerDialog(this,
-                    TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
-                        date = date+"  $hourOfDay:$minute"
-                        editText.setText(date)
-                    },c.get(Calendar.HOUR),c.get(Calendar.MINUTE),false)
-                tp.show()
+                TimePickerMethod()
             }
         }
+
+        }
+
+
+    private fun TimePickerMethod() {
+        var c: Calendar = Calendar.getInstance()
+        var tp = TimePickerDialog(
+            this,
+            TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
+                date = date + "  $hourOfDay:$minute"
+                editText.setText(date)
+            }, c.get(Calendar.HOUR), c.get(Calendar.MINUTE), false
+        )
+        tp.show()
     }
 
     private fun DatePickerMethod() {
