@@ -83,8 +83,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/待定"
-            android:text="待定"
+            android:id="@+id/retrofitBtn"
+            android:text="Retrofit"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
