@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         retrofitBtn.setOnClickListener(this)
         recyclerViewStlyeBtn.setOnClickListener(this)
         NFCBtn.setOnClickListener(this)
+        reciprocalBtn.setOnClickListener(this)
 
     }
 
@@ -63,6 +64,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.NFCBtn ->{
                 startActivity(Intent(this, NfcActivity::class.java))
+            }
+            R.id.reciprocalBtn ->{
+                startActivity(Intent(this, ReciprocalActivity::class.java))
             }
 
         }
