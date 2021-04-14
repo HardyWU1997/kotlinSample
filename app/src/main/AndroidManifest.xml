@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kotlinsampie">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- NFC -->
+    <uses-permission android:name="android.permission.NFC" /> <!-- android:required = true代表Google Play會自動過濾掉沒有支持NFC晶片的設備 -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSampie">
-        <activity android:name=".activity.RetrofitActivity"></activity>
+        <activity android:name=".activity.NfcActivity"></activity>
+        <activity android:name=".activity.RecyclerViewStyleActivity" />
+        <activity android:name=".activity.RetrofitActivity" />
         <activity android:name=".activity.DialogActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".fragment.FragmentActivity" />

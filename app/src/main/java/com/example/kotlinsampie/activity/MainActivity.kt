@@ -7,6 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlinsampie.R
 import com.example.kotlinsampie.fragment.FragmentActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         recyclerBtn.setOnClickListener(this)
         dialogBtn.setOnClickListener(this)
         retrofitBtn.setOnClickListener(this)
+        recyclerViewStlyeBtn.setOnClickListener(this)
+        NFCBtn.setOnClickListener(this)
 
     }
 
@@ -54,6 +57,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent =  Intent()
                 intent.setClass(this@MainActivity, RetrofitActivity::class.java)
                 startActivity(intent)
+            }
+            recyclerViewStlyeBtn.id ->{
+                startActivity(Intent(this, RecyclerViewStyleActivity::class.java))
+            }
+            R.id.NFCBtn ->{
+                startActivity(Intent(this, NfcActivity::class.java))
             }
 
         }
