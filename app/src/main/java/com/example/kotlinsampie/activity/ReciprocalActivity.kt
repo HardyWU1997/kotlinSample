@@ -16,6 +16,8 @@ class ReciprocalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_reciprocal)
 
         TimeTask()
+
+        UiChange()
     }
 
 
@@ -34,4 +36,17 @@ class ReciprocalActivity : AppCompatActivity() {
         }
         timer.schedule(timerTask, 1000, 1000) //時間在幾毫秒過後開始以多少毫秒執行
     }
+
+    private fun UiChange(){
+        val uiChange = Timer()
+        val uiChangeTask:TimerTask = object :TimerTask(){
+            override fun run() {
+                runOnUiThread {
+
+                }
+            }
+        }
+        uiChange.schedule(uiChangeTask, 1000, 1000*2) //時間在1秒過後開始以每2秒執行一次
+}
+
 }
