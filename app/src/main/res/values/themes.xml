@@ -18,4 +18,9 @@
         <item name="android:windowFullscreen">true</item>
     </style>
     
+    <style name="RatingBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/colorRatingActive</item>
+        <item name="colorControlNormal">@color/colorRatingInactive</item>
+    </style>
+    
 </resources>
