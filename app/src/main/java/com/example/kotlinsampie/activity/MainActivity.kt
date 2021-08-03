@@ -2,12 +2,15 @@ package com.example.kotlinsampie.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlinsampie.R
 import com.example.kotlinsampie.fragment.FragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -33,6 +36,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         recyclerViewStlyeBtn.setOnClickListener(this)
         NFCBtn.setOnClickListener(this)
         reciprocalBtn.setOnClickListener(this)
+
+        val time = "1625741556" //時間戳轉換
+        val timeLong = time.toLong()
+        val result: String = formatData("yyyy-MM-dd HH:mm:ss", timeLong)
+        Log.d("Receiver_Data","time:$result")
 
     }
 
@@ -70,5 +78,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         }
+    }
+
+    fun formatData(dataFormat: String?, timeStamp: Long): String {
+        var timeStamp = timeStamp
+        if (timeStamp == 0L) {
+            return ""
+        }
+        timeStamp *= 1000
+        var result = ""
+        val format = SimpleDateFormat(dataFormat)
+        result = format.format(Date(timeStamp))
+        return result
     }
 }
