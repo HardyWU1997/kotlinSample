@@ -82,4 +82,7 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "org.jetbrains.anko:anko-design:$anko_version" // For SnackBars 取代Toast
 
+    //SQLite
+    implementation 'com.facebook.stetho:stetho:1.4.1'
+
 }

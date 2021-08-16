@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/activity_reciprocal.xml" value="0.14628623188405798" />
         <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/activity_recycler_view_style.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/activity_sqlite.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/card_layout.xml" value="0.18614130434782608" />
         <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/item_container_tv_show.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/hardywu/AndroidStudioProjects/KotlinSampie/app/src/main/res/layout/sql_items.xml" value="0.29583333333333334" />
       </map>
     </option>
   </component>

@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSampie">
-
+        <activity
+            android:name=".activity.SQLiteActivity"
+            android:exported="true" />
         <activity android:name=".activity.ReciprocalActivity" />
         <activity android:name=".activity.NfcActivity" />
         <activity android:name=".activity.RecyclerViewStyleActivity" />

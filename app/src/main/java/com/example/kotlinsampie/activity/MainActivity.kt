@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         recyclerViewStlyeBtn.setOnClickListener(this)
         NFCBtn.setOnClickListener(this)
         reciprocalBtn.setOnClickListener(this)
+        SQLiteBtn.setOnClickListener(this)
 
         val time = "1625741556" //時間戳轉換
         val timeLong = time.toLong()
@@ -75,6 +76,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.reciprocalBtn ->{
                 startActivity(Intent(this, ReciprocalActivity::class.java))
+            }
+            R.id.SQLiteBtn ->{
+                startActivity(Intent(this,SQLiteActivity::class.java))
             }
 
         }
